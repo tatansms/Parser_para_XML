@@ -20,7 +20,7 @@ class PARSERXML:
         self.parse_element(self.root)
 
 
-    # En este punto (def _parse_element) fue donde usamos el polimorfismo para manejar diferentes tipos de elementos XML.
+    # En este punto (def parse_element) fue donde usamos el polimorfismo para manejar diferentes tipos de elementos XML.
     # ya que dependiendo del tipo de elemento toma una acción diferente
     def parse_element(self, element, level=0):
         if element.attrib:
