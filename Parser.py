@@ -1,7 +1,6 @@
 #codigo Hecho con:
 #DIEGO DE LA OHZ BALLENA
 #SEBASTIAN MARTINEZ
-
 import xml.etree.ElementTree as ET
 class PARSERXML:
     def __init__(self, file_path):
@@ -18,8 +17,7 @@ class PARSERXML:
             self.load_xml()
 
         self.parse_element(self.root)
-
-
+        
     # En este punto (def parse_element) fue donde usamos el polimorfismo para manejar diferentes tipos de elementos XML.
     # ya que dependiendo del tipo de elemento toma una acción diferente
     def parse_element(self, element, level=0):
